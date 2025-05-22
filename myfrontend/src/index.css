@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes countUp {
+  from { transform: scale(0.5); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+.animate-fadeInUp { animation: fadeInUp 0.8s ease-out; }
+.animate-fadeIn { animation: fadeIn 1s ease-out; }
+.animate-countUp { animation: countUp 1s ease-out; }
+.animate-shimmer { animation: shimmer 2s infinite; }
+.hover\\:scale-102:hover { transform: scale(1.02); }
+.bg-gradient-radial { background: radial-gradient(circle, var(--tw-gradient-stops)); 
+}
