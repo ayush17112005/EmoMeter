@@ -1,0 +1,9 @@
+# Ignore node_modules in frontend
+/frontend/node_modules/
+
+# Ignore Python cache files in backend
+/backend/__pycache__/
+*.pyc
+
+# Ignore environment files
+.env
